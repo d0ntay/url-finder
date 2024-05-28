@@ -12,7 +12,7 @@ Example : example.com/passwords, example.com/admin.....
 # installation
 Step 1: git clone https://github.com/d0ntay/url-finder.git
 
-Step 2: cd url-finder/url-finder/build/ && make
+Step 2: cd url-finder && ./install.sh
 
 Step 3: enjoy!
 
@@ -21,3 +21,4 @@ Step 3: enjoy!
 # setup
 
 Make sure you have a wordlist ready to use!
+
