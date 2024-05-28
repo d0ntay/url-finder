@@ -1,3 +1,0 @@
-/home/0xD/dante/github/url-finder/url-finder/build/CMakeFiles/url-finder.dir
-/home/0xD/dante/github/url-finder/url-finder/build/CMakeFiles/edit_cache.dir
-/home/0xD/dante/github/url-finder/url-finder/build/CMakeFiles/rebuild_cache.dir

@@ -32,7 +32,7 @@ void enumerator(string url, string path)
       Response r = Get(Url{url+line});
       if(r.status_code == 200)
       {
-        cout << url << line << endl;
+        printf("\003[1;32%.25s\003[0m\n",url);
       }
     }
     myfile.close();
