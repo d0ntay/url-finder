@@ -6,6 +6,9 @@
 
 using namespace std;
 using namespace cpr;
+#define RESET   "\033[0m"
+#define GREEN   "\033[32m"
+#define RED     "\033[31m"
 
 void enumerator(string url, string path);
 int main()
@@ -13,11 +16,11 @@ int main()
   string url{};
   string path{};
   cout << "Please enter URL below: example.com" << endl;
-  printf("\033[1;31mURL\033[0m:");
+  printf( RED "URL" RESET":");
   getline(cin,url);
   url += "/";
   cout << "Please enter Path to Wordlist below: /example/path/to/file" << endl;
-  printf("\033[1;31mWordlist\033[0m:");
+  printf(RED "Wordlist" RESET":");
   getline(cin,path);
   enumerator(url,path);
   return 0;
@@ -32,7 +35,7 @@ void enumerator(string url, string path)
       Response r = Get(Url{url+line});
       if(r.status_code == 200)
       {
-        printf("\003[1;32%.25s\003[0m\n",url);
+        cout << GREEN << url << line << "\n";
       }
     }
     myfile.close();
