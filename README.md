@@ -12,7 +12,7 @@ Example : example.com/passwords, example.com/admin.....
 # installation
 Step 1: git clone https://github.com/d0ntay/url-finder.git
 
-Step 2: cd url-finder && ./install.sh
+Step 2: cd url-finder && chmod +x install.sh && ./install.sh
 
 Step 3: enjoy!
 
