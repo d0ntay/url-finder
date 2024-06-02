@@ -2,7 +2,6 @@
 #include <cpr/cpr.h>
 #include <string>
 #include <fstream>
-#include <stdio.h>
 
 using namespace std;
 using namespace cpr;
@@ -16,11 +15,11 @@ int main()
   string url{};
   string path{};
   cout << "Please enter URL below: example.com" << endl;
-  printf( RED "URL" RESET":");
+  cout << RED << "URL" << RESET << ":";
   getline(cin,url);
   url += "/";
   cout << "Please enter Path to Wordlist below: /example/path/to/file" << endl;
-  printf(RED "Wordlist" RESET":");
+  cout << RED << "Wordlist" << RESET << ":";
   getline(cin,path);
   enumerator(url,path);
   return 0;
